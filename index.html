@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUpForm</title>
+</head>
+<body>
+
+        <div class="backgroundImg"></div>
+
+     
+          <div class="mainContainer">
+            <h1 class="text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</h1>
+            <h2 class="subText">You know you want to.</h2>
+
+            <fieldset class="fieldSet">
+              <h2 class="subText">Let's do this!</h2>
+
+            <div class="fieldContainer">
+              <label class="formRequire" for="first_name">FIRST NAME</label>
+              <input class="formFilling" type="text" id="name" name="first_name" required>
+
+              <label class="formRequire" for="last_name">LAST NAME</label>
+              <input class="formFilling" type="text" id="name" name="last_name" required>
+
+              <label class="formRequire" for="email">EMAIL</label>
+              <input class="formFilling" type="email" id="email" name="email" required>
+
+              <label class="formRequire" for="phone_number">PHONE NUMBER</label>
+              <input class="formFilling" type="tel" id="phone_number" name="phone_number" required>
+
+              <label class="formRequire" for="password">PASSWORD</label>
+              <input class="formFilling" type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required> 
+
+              <label class="formRequire" for="password">CONFIRM PASSWORD</label>
+              <input class="formFilling" type="password" id="password" name="password"  required>
+            </div>  
+            </fieldset>
+
+
+            <div id="message">
+              <h3>Password must contain the following:</h3>
+              <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+              <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+              <p id="number" class="invalid">A <b>number</b></p>
+              <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+            </div>
+
+            <input type="submit" value="Submit">
+
+            <span>Already have an account? <p style="color: #343F51;">Log in</p></span>
+          </div>
+ 
+<script src="./script.js"></script>
+</body>
+</html>
